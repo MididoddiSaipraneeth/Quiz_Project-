@@ -53,6 +53,9 @@ function nextSet() {
     score += setScore;
 
     if (setScore >= 5) {
+        if (currentLevel === 'hard') {
+            alert('Excellent performance! You scored 5 in the hard level.');
+        }
         currentLevel = 'hard';
     } else if (setScore >= 3) {
         currentLevel = 'medium';
